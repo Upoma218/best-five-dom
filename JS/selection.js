@@ -12,5 +12,6 @@ function addToList(players){
         return;
     }
 
-    listContainer.appendChild(li);    
+    listContainer.appendChild(li);   
+    players.disabled = true; 
 }
