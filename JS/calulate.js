@@ -25,3 +25,6 @@ document.getElementById('player-cost-caculation').addEventListener('click',funct
     
 })
 
+
+
+

@@ -1,30 +1,36 @@
-function bestPlayer(elemnetId){
-    const getPlayerById = document.getElementById(elemnetId);
-    const playerId = getPlayerById.innerText;
-    const getSelectionById = document.getElementById('final-selection');
-    const li = document.createElement('li');
-    li.innerText = playerId;
-    li.classList.add = ('item');
-    getSelectionById.append(li);
-}
 
-document.getElementById('select-first-player').addEventListener('click',function(){
-     document.getElementById('first-player-id');
+document.getElementById('list-container').addEventListener('click',function(event){
+     event.target.parentNode.removeChild(event.target)
+    })           
+    document.getElementById('select-first-player').addEventListener('click',function(){
+     function bestPlayerList(playersNames){
+          const listContainer = document.getElementById('list-container');
+          const li = document.createElement('li');
+          const playerNames = document.getElementById(playersNames);
+          li.innerText = playerNames.innerText;
+          li.classList.add('item');
+          listContainer.appendChild(li);
+         
+          return playerNames;
+          
+          
+     }
+     bestPlayerList('first-player-id');
+/*      bestPlayerList('second-player-id');
+     bestPlayerList('third-player-id');
+     bestPlayerList('fourth-player-id');
+     bestPlayerList('fifth-player-id');
+     bestPlayerList('sixth-player-id'); */
+     
+    })
+
+ /*  document.get('select-first-player').addEventListener('click',function(){
+     function bestPlayerList(playersNames){
+          const secondPlayerName = document.getElementById(playersNames);
+          return secondPlayerName;
+     }
+     bestPlayerList('second-player-id');
+  }) */
+
+
     
-})
-
-/* document.getAnimations('select-second-player').addEventListener('click', function(){
-    document.getElementById('second-player-id');
-})
-document.getAnimations('select-third-player').addEventListener('click', function(){
-    document.getElementById('third-player-id');
-})
-document.getAnimations('select-fourth-player').addEventListener('click', function(){
-     document.getElementById('fourth-player-id');
-})
-document.getAnimations('select-fifth-player').addEventListener('click', function(){
-     document.getElementById('fifth-player-id');
-})
-document.getAnimations('select-sixth-player').addEventListener('click', function(){
-     document.getElementById('sixth-player-id');
-}) */
