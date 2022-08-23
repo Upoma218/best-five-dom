@@ -11,8 +11,6 @@ function addToList(players){
         alert('Five player has already added');
         return;
     }
-    else{
-        
-    }
+
     listContainer.appendChild(li);    
 }
