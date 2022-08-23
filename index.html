@@ -25,11 +25,11 @@
 <body class="bg-neutral-800">
     <!-- Header section -->
     <header class="w-full bg-black text-center flex justify-center">
-        <section class="flex justify-center ">
+        <section class="lg:flex justify-center md:block sm:block">
             <div class="grid grid-cols-1">
                 <img class=" h-full w-full" src="header-elements/mainPlayer.png" alt="">
             </div>
-            <div class="text-center align-center my-20 w-8/12 grid grid-cols-1 p-10">
+            <div class="text-center align-center my-20 w-8/12 grid grid-cols-1 p-10 justify-center">
                 <h1 class="text-orange-600 text-7xl font-berkshire ">Pick the Best Five</h1>
                 <img class="pl-60 ml-60 w-7/12" src="header-elements/curve.png" alt="">
                 <p class="text-white">The Best FIFA Men's Player is given to the most 
@@ -48,14 +48,14 @@
         <!-- card section -->
     </header>
     <main class="mt-20 mx-20 text-white">
-        <section class="flex">
-            <section class="grid grid-cols-3 gap-4  mr-2">
+        <section class="lg:flex md:block sm: block">
+            <section class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4  mr-4 mb-4">
 
                 <!-- Player 1 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
-                    <img src="players/player1.png" alt="">
+                    <img class="w-full" src="players/player1.png" alt="">
                     <h3 class="text-2xl font-bold mt-3">Lionel Messi</h3>
-                    <div class="flex px-12 mb-2">
+                    <div class="flex px-12 mb-2 justify-center">
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div> 
@@ -64,9 +64,9 @@
 
                 <!-- Player 2 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
-                    <img src="players/player2.png" alt="">
+                    <img class="w-full" src="players/player2.png" alt="">
                     <h3 class="text-2xl font-bold mt-3">Neymar Jr</h3>
-                    <div class="flex px-12 mb-2">
+                    <div class="flex px-12 mb-2 justify-center">
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
@@ -75,9 +75,9 @@
 
                 <!-- Player 3 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
-                    <img src="players/player3.png" alt="">
+                    <img class="w-full" src="players/player3.png" alt="">
                     <h3 class="text-2xl font-bold mt-3">Kylian Mbappé</h3>
-                    <div class="flex px-12 mb-2">
+                    <div class="flex px-12 mb-2 justify-center">
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
@@ -86,9 +86,9 @@
                 
                 <!-- Player 4 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
-                    <img src="players/player4.png" alt="">
+                    <img class="w-full" src="players/player4.png" alt="">
                     <h3 class="text-2xl font-bold mt-3">Vítor Machado</h3>
-                    <div class="flex px-12 mb-2">
+                    <div class="flex px-12 mb-2 justify-center">
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
@@ -97,9 +97,9 @@
 
                 <!-- Player 5 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
-                    <img src="players/player5.png" alt="">
+                    <img class="w-full" src="players/player5.png" alt="">
                     <h3 class="text-2xl font-bold mt-3">Sergio Ramos</h3>
-                    <div class="flex px-12 mb-2">
+                    <div class="flex px-12 mb-2 justify-center">
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
@@ -108,9 +108,9 @@
 
                 <!-- Player 6 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
-                    <img src="players/player6.png" alt="">
+                    <img class="w-full" src="players/player6.png" alt="">
                     <h3 class="text-2xl font-bold mt-3">Renato Sanches</h3>
-                    <div class="flex px-12 mb-2">
+                    <div class="flex px-12 mb-2 justify-center">
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
@@ -120,37 +120,37 @@
             <!-- cards section end -->
 
             <!-- calculate section -->
-            <section class="grid grid-cols-1 gap-4 ml-2">
+            <section class="grid grid-cols-1 gap-4 mb-4">
 
                 <!-- Section board -->
                 <div class="border-2  border-neutral-700 text-center bg-black ">
                     <h3 class="text-2xl font-semibold my-4 text-sky-300">Selected - V</h3>
-                    <ol id="list-container" class="list-decimal decoration-white list-inside text-white text-sm mt-8 mb-4">
+                    <ol id="list-container" class="list-decimal decoration-white list-inside text-white text-sm mt-8 mb-4 ">
                     </ol>
                  </div>
 
                  <!-- Coast calculation -->
                  <div class="border-2 border-neutral-700 text-center bg-black px-2 ">
                     <h3 class="text-2xl font-semibold my-4 text-sky-300">Budget</h3>
-                    <div class="flex my-8">
+                    <div class="flex my-8 justify-center">
                        <p class="text-sm py-3 ml-3">Per Player</p> 
                        <input id="player-cost" class="w-6/12 ml-8 bg-neutral-900  p-1" type="text">
                     </div>
                     <button id="player-cost-caculation" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700">Calculate</button>
-                    <div class="flex p-3">
+                    <div class="flex p-3 justify-center">
                         <p class="mr-16">Player Expenses</p>
                         <p class="text-sky-200">$<span id="player-total-cost">00</span></p>
                     </div>
-                    <div class="flex my-8">
+                    <div class="flex my-8 justify-center">
                         <p class="text-sm py-3 ml-3">Manager</p> 
                         <input id="manager-cost" class="w-6/12 ml-8 bg-neutral-900  p-1" type="text">
                      </div>
-                     <div class="flex my-8">
+                     <div class="flex my-8 justify-center">
                         <p class="text-sm py-3 ml-3 mr-4">Coach</p> 
                         <input id="coach-cost" class="w-6/12 ml-8 bg-neutral-900  p-1" type="text">
                      </div>
                     <button id="btn-total-calculate" class="text-sm font-semibold bg-zinc-500 px-16 py-2 mb-5 hover:bg-blue-700">Calculate Total</button>
-                    <div class="flex p-3">
+                    <div class="flex p-3 justify-center">
                         <p class="mr-32 font-semibold">Total</p>
                         <p class="text-orange-700 font-bold">$<span id="cost-total">00</span></p>
                     </div>

@@ -19,8 +19,6 @@ document.getElementById('player-cost-caculation').addEventListener('click',funct
         const coachCostValue = parseFloat(coachCostValueString);
         
         const totalCost = document.getElementById('cost-total');
-        // const totalCostValueString = totalCost.value;
-        // const totalCostValue = parseFloat(totalCostValueString);
         
         const totalCostAmount = playerTotalCostCalculate + managerCostValue + coachCostValue;
         totalCost.innerText = totalCostAmount;
