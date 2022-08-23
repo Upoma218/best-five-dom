@@ -2,7 +2,10 @@ document.getElementById('player-cost-caculation').addEventListener('click',funct
     const perPlayerCost = document.getElementById('player-cost');
     const playerCostValueString = perPlayerCost.value;
     const playerCostValue = parseFloat(playerCostValueString);
-    const playerTotalCostCalculate = playerCostValue * 5;
+    const listContainer = document.getElementById('list-container');
+    const playerNamesList = listContainer.children.length;
+    
+    const playerTotalCostCalculate = playerCostValue * playerNamesList;
     const playerTotalCostAmount = document.getElementById('player-total-cost');
     playerTotalCostAmount.innerText = playerTotalCostCalculate;
     
