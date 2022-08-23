@@ -50,15 +50,19 @@
     <main class="mt-20 mx-20 text-white">
         <section class="flex">
             <section class="grid grid-cols-3 gap-4  mr-2">
+
+                <!-- Player 1 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
                     <img src="players/player1.png" alt="">
                     <h3 id="first-player-id" class="text-2xl font-bold mt-3">Lionel Messi</h3>
                     <div class="flex px-12 mb-2">
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
-                    </div>
-                    <button id="select-first-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700">SELECT</button>
+                    </div> 
+                    <button id="select-first-player"class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700" >SELECT</button>
                 </div>
+
+                <!-- Player 2 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
                     <img src="players/player2.png" alt="">
                     <h3 id="second-player-id" class="text-2xl font-bold mt-3">Neymar Jr</h3>
@@ -66,8 +70,10 @@
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
-                    <button id="select-second-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700">SELECT</button>
+                    <button id="select-second-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700" onclick="addToList()">SELECT</button>
                 </div>
+
+                <!-- Player 3 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
                     <img src="players/player3.png" alt="">
                     <h3 id="third-player-id" class="text-2xl font-bold mt-3">Kylian Mbappé</h3>
@@ -75,9 +81,10 @@
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
-                    <button id="select-third-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700">SELECT</button>
+                    <button id="select-third-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700" onclick="addToList()">SELECT</button>
                 </div>
-            
+                
+                <!-- Player 4 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
                     <img src="players/player4.png" alt="">
                     <h3 id="fourth-player-id" class="text-2xl font-bold mt-3">Vítor Machado</h3>
@@ -85,8 +92,10 @@
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
-                    <button id = "select-fourth-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700">SELECT</button>
+                    <button id = "select-fourth-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700" onclick="addToList()">SELECT</button>
                 </div>
+
+                <!-- Player 5 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
                     <img src="players/player5.png" alt="">
                     <h3 id="fifth-player-id" class="text-2xl font-bold mt-3">Sergio Ramos</h3>
@@ -94,8 +103,10 @@
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
-                    <button id = "select-fifth-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700">SELECT</button>
+                    <button id = "select-fifth-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700" onclick="addToList()">SELECT</button>
                 </div>
+
+                <!-- Player 6 -->
                 <div class="border-2 border-neutral-700 text-center bg-black">
                     <img src="players/player6.png" alt="">
                     <h3 id="sixth-player-id" class="text-2xl font-bold mt-3">Renato Sanches</h3>
@@ -103,21 +114,25 @@
                         <p class="text-sm py-2 text-neutral-400 mr-3 font-semibold">36 Goals</p>
                         <p class="text-sm text-neutral-400 py-2 font-semibold"> <span class="font-bold mr-3">.</span>120 Assist</p>
                     </div>
-                    <button id = "select-sixth-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700">SELECT</button>
+                    <button id = "select-sixth-player" class="text-sm font-semibold bg-zinc-500 px-20 py-2 mb-5 hover:bg-blue-700" onclick="addToList()">SELECT</button>
                 </div>
             </section>
             <!-- cards section end -->
 
             <!-- calculate section -->
             <section class="grid grid-cols-1 gap-4 ml-2">
+
+                <!-- Section board -->
                 <div class="border-2  border-neutral-700 text-center bg-black ">
                     <h3 class="text-2xl font-semibold my-4 text-sky-300">Selected - V</h3>
                    <div  class="payer-lists text-white text-sm my-8">
-                    <ol id="list-container">
+                    <!-- <ol id="list-container">
                         <li class="item"></li>
-                    </ol>
+                    </ol> -->
                    </div>
                  </div>
+
+                 <!-- Coast calculation -->
                  <div class="border-2 border-neutral-700 text-center bg-black px-2 ">
                     <h3 class="text-2xl font-semibold my-4 text-sky-300">Budget</h3>
                     <div class="flex my-8">
@@ -150,7 +165,7 @@
         <hr>
         <p class="text-center text-neutral-400 text-xs mt-10 mb-30">Copyright @ 2022 All Rights Reserved</p>
     </footer>
-    <script src="JS/select.js"></script>
+    <script src="JS/selection.js"></script>
     <script src="JS/calulate.js"></script>
 </body>
 </html>
